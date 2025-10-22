@@ -688,3 +688,15 @@ footer .versiculo {
   cursor: pointer;
 }
 
+.insta-link {
+  color: inherit; /* herda a cor rosa padrão do footer */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insta-link:hover {
+  text-decoration: underline;
+  color: inherit; /* mantém o mesmo rosa */
+}
+
+
