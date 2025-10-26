@@ -103,7 +103,7 @@ document.querySelectorAll('.menu-header a').forEach(link => {
     let listaProdutos = carrinho.map(i => `${i.quantidade}x ${i.titulo} (R$ ${i.preco.toFixed(2)})`).join('%0A');
     let total = carrinho.reduce((acc, i) => acc + i.preco * i.quantidade, 0).toFixed(2);
 
-    let texto = `Olá! Meu nome é ${nome}.%0AMeu e-mail: ${email}%0ATelefone: ${telefone}%0AEndereço: ${endereco}%0APonto de referência: ${referencia}%0AProdutos:%0A${listaProdutos}%0ATotal: R$ ${total}%0AObservações: ${mensagem}`;
+    let texto = `Olá! Meu nome é ${nome}, gostaria de fazer um pedido.%0AMeu e-mail: ${email}%0ATelefone: ${telefone}%0AEndereço: ${endereco}%0APonto de referência: ${referencia}%0AProdutos:%0A${listaProdutos}%0ATotal: R$ ${total}%0AObservações: ${mensagem}`;
 
     
     window.open(`https://wa.me/5521988364626?text=${texto}`, '_blank');
