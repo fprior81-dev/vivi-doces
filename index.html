@@ -6,15 +6,17 @@
 <title>Vivi’s Doces – Confeitaria Artesanal</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
 <header>
   <div class="logo-container">
-    <img src="logo-vivis.png" alt="Logo Vivi’s Doces" class="logo">
+    <img src="imagens/logo-vivis.png" alt="Logo Vivi’s Doces" class="logo">
     <div class="titulo-header">
       <h1>Vivi’s Doces</h1>
-      <p>Confeitaria artesanal feita com amor e sabor!</p>
+      <p>Confeitaria artesanal feita com amor, sabor e carinho!</p>
     </div>
   </div>
 
@@ -22,7 +24,7 @@
   <nav class="menu-header">
     <a href="#historia">Nossa História</a>
     <a href="#produtos">Produtos</a>
-    <a href="#pedido">Faça seu Pedido</a>
+    <a href="#pedido">Peça agora</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -38,7 +40,7 @@
     <div class="fechar" id="fecharMenu">✖</div> <!-- X para fechar -->
     <a href="#historia">Nossa História</a>
     <a href="#produtos">Produtos</a>
-    <a href="#pedido">Faça seu Pedido</a>
+    <a href="#pedido">Peça agora</a>
     <a href="#contato">Contato</a>
   </nav>
 </header>
@@ -48,26 +50,27 @@
     <section id="historia" class="secao-historia fade-element">
   <h2>Nossa história</h2>
   <p>
-    A Vivi’s Doces nasceu do amor pela confeitaria artesanal, criando bolos, doces e cupcakes com carinho e sabor.
-    Cada receita é feita pensando em momentos especiais e memórias doces para toda família.
+    A Vivi’s Doces nasceu do amor pela confeitaria artesanal e do sonho de adoçar momentos especiais.
+    Cada receita é preparada com ingredientes selecionados e muito carinho, para que cada mordida traga sabor e lembranças boas.
   </p>
 </section>
 
   <section id="produtos">
     <h2 class="titulo-rosa">Produtos</h2>
+     
     <div class="container-produtos">
-      <div class="card-produto miniatura" data-titulo="Bolo de Chocolate" data-descricao="Camadas úmidas e cobertura cremosa de ganache." data-preco="45" data-img="bolo-chocolate.jpg">
-        <img src="bolo-chocolate.jpg" alt="Bolo de Chocolate">
+      <div class="card-produto miniatura" data-titulo="Bolo de Chocolate" data-descricao="Camadas úmidas e cobertura cremosa de ganache." data-preco="45" data-img="imagens/bolo-chocolate.jpg">
+        <img src="imagens/bolo-chocolate.jpg" alt="Bolo de Chocolate">
         <h3>Bolo de Chocolate</h3>
         <p class="preco">R$ 45,00</p>
       </div>
-      <div class="card-produto miniatura" data-titulo="Brigadeiros Gourmet" data-descricao="Caixinhas com 6 unidades recheadas de amor e sabor." data-preco="25" data-img="brigadeiros.jpg">
-        <img src="brigadeiros.jpg" alt="Brigadeiros Gourmet">
+      <div class="card-produto miniatura" data-titulo="Brigadeiros Gourmet" data-descricao="Caixinhas com 6 unidades recheadas de amor e sabor." data-preco="25" data-img="imagens/brigadeiros.jpg">
+        <img src="imagens/brigadeiros.jpg" alt="Brigadeiros Gourmet">
         <h3>Brigadeiros Gourmet</h3>
         <p class="preco">R$ 25,00</p>
       </div>
-      <div class="card-produto miniatura" data-titulo="Cupcakes" data-descricao="Cupcakes coloridos, fofinhos e deliciosos." data-preco="30" data-img="cupcake.jpg">
-        <img src="cupcake.jpg" alt="Cupcakes">
+      <div class="card-produto miniatura" data-titulo="Cupcakes" data-descricao="Cupcakes coloridos, fofinhos e deliciosos." data-preco="30" data-img="imagens/cupcake.jpg">
+        <img src="imagens/cupcake.jpg" alt="Cupcakes">
         <h3>Cupcakes</h3>
         <p class="preco">R$ 30,00</p>
       </div>
@@ -75,8 +78,10 @@
 
   <!-- ===== Seção Faça Seu Pedido ===== -->
 <section id="pedido" class="secao-pedido fade-element">
-  <h2>Faça seu Pedido 🍰</h2>
-  <p>Preencha seus dados e finalize seu pedido de forma rápida e segura.</p>
+  <h2>Peça agora 🍰</h2>
+  <p>Escolha seu doce favorito e descubra o sabor que encanta nossos clientes 🍫🧁</p>
+  <p>Como? Basta selecionar o produto ✔️ , adicionar no carrinho 🛒, preencher o formulário abaixo e enviar pedido pelo WhatsApp <i class="fa-brands fa-whatsapp"></i></p>
+  <p>Se preferir, chame direto no Whatsapp <i class="fa-brands fa-whatsapp"></i></p>
 
   <form id="formPedido" class="form-pedido">
     <div class="campo-form">
@@ -96,12 +101,12 @@
 
     <div class="campo-form">
       <label for="endereco">Endereço completo</label>
-      <input type="end" id="endereco" placeholder="rua.. bairro...cep" required>
+      <input type="end" id="endereco" placeholder="rua.. bairro...cep" >
     </div>
 
       <div class="campo-form">
       <label for="referencia">Ponto de referência</label>
-      <input type="end" id="referencia" placeholder="Próximo à farmácia, esquina com a praça..." required>
+      <input type="end" id="referencia" placeholder="Próximo à farmácia, esquina com a praça..." >
     </div>
 
     <div class="campo-form">
@@ -109,8 +114,11 @@
       <textarea id="mensagem" rows="3" placeholder="Ex: Entrega no sábado à tarde"></textarea>
     </div>
 
-    <button type="submit" class="btn-pedido">Enviar Pedido via WhatsApp</button>
+    <button type="submit" class="btn-pedido"><i class="fa-brands fa-whatsapp"></i> Enviar pedido pelo WhatsApp</button>
     <p id="mensagemSucesso" class="mensagem-sucesso">Pedido enviado com sucesso! 🎉</p>
+   
+<a href="https://wa.me/5521988364626?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." class="whatsapp-fixo" target="_blank"><i class="fa-brands fa-whatsapp"></i> </a>
+
   </form>
 </section>
 </main>
@@ -139,11 +147,13 @@
 <footer id="contato">
   <p class="horario">⏰ Horário de Atendimento: 09h às 18h</p>
   <div class="centralizado">
-    <p>📞 (21) 98836-4626 | 📍 Rio de Janeiro – RJ</p>
-  <a href="https://www.instagram.com/vividoces2013" target="_blank" class="insta-link">
+    <p>📞 <i class="fa-brands fa-whatsapp"></i> (21) 98836-4626 | 📍 Rio de Janeiro – RJ</p>
+    
+     <a href="https://www.instagram.com/vividoces2013" target="_blank" class="insta-link">
     @vividoces2013
       </a>
-    <p>&copy; 2025 Vivi’s Doces</p>
+    
+    <p>&copy; 2025 Vivi’s Doces – Feito com amor e açúcar 💖</p>
     <p class="versiculo">1 Coríntios 16:14: "Tudo o que fizerem, façam com amor"</p>
   </div>
 </footer>
@@ -152,6 +162,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
