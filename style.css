@@ -42,7 +42,7 @@ main { padding:50px 20px 20px 20px; margin-right:320px; }
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 15px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin-top: 15px;
   position: relative; /* mantém os cards no contexto da grid */
   z-index: 1;         /* garante que os cards fiquem atrás de elementos com z-index maior */
 }
@@ -688,6 +688,7 @@ footer .versiculo {
   cursor: pointer;
 }
 
+
 .insta-link {
   color: inherit; /* herda a cor rosa padrão do footer */
   text-decoration: none;
@@ -699,4 +700,44 @@ footer .versiculo {
   color: inherit; /* mantém o mesmo rosa */
 }
 
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 2000;
+  transition: transform 0.3s;
+}
+.whatsapp-fixo:hover {
+  transform: scale(1.05);
+  background: #a33654;
+  background-color: #128C7E;
+}
+
+.fa-whatsapp {
+  color: #25D366; /* verde oficial do WhatsApp */
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #25D366;
+}
+
+a:hover {
+  color: #128C7E;
+}
+
+.fa-whatsapp {
+  margin-right: 5px;
+  color: #25D366;
+  font-size: 20px;
+}
 
